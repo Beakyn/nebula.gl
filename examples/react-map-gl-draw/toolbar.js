@@ -10,6 +10,8 @@ const ICON_MAP = [
   { id: MODES.DRAW_PATH, text: 'Draw Polyline', icon: 'icon-path.svg' },
   { id: MODES.DRAW_POLYGON, text: 'Draw Polygon', icon: 'icon-polygon.svg' },
   { id: MODES.DRAW_RECTANGLE, text: 'Draw Rectangle', icon: 'icon-rectangle.svg' },
+  { id: MODES.MEASURE_DISTANCE, text: 'Measure Distance', icon: 'icon-measure-dist.svg' },
+  { id: MODES.MEASURE_AREA, text: 'Measure Area', icon: 'icon-measure-area.svg' },
 ];
 
 const Container = styled.div`

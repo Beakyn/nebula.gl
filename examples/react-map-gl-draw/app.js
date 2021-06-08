@@ -8,6 +8,8 @@ import {
   DrawLineStringMode,
   DrawRectangleMode,
   DrawPolygonMode,
+  MeasureDistanceMode,
+  MeasureAreaMode,
 } from '@nebula.gl/edit-modes';
 
 import { MODES } from './constants';
@@ -22,6 +24,8 @@ const MODE_TO_HANDLER = {
   [MODES.DRAW_PATH]: DrawLineStringMode,
   [MODES.DRAW_RECTANGLE]: DrawRectangleMode,
   [MODES.DRAW_POLYGON]: DrawPolygonMode,
+  [MODES.MEASURE_DISTANCE]: MeasureDistanceMode,
+  [MODES.MEASURE_AREA]: MeasureAreaMode,
 };
 
 // eslint-disable-next-line no-process-env, no-undef
@@ -126,6 +130,9 @@ export default class App extends React.Component {
           onSelect={this._onSelect}
           featureStyle={getFeatureStyle}
           editHandleStyle={getEditHandleStyle}
+          tooltipStyle={{
+            fill: 'slategray',
+          }}
           editHandleShape={'circle'}
           mode={modeHandler}
         />
